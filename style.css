@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: hsl(27deg, 66%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 375px;
+  height: auto;
+}
+.container .myblance {
+  width: 375px;
+  height: 100px;
+  background: hsl(10deg, 79%, 65%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.chartContainer {
+  width: 375px;
+  padding: 0 20px;
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.chartContainer .title {
+  color: hsl(25deg, 47%, 15%);
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.chart .chart1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.chart .chartfill1, .chart .chartfill2, .chart .chartfill4, .chart .chartfill5, .chart .chartfill6, .chart .chartfill7 {
+  position: absolute;
+  width: 40px;
+  background: hsl(10deg, 79%, 65%);
+  bottom: 0;
+  border-radius: 10px;
+}
+.chart .chartfill1 {
+  height: 60px;
+}
+.chart .chartfill2 {
+  height: 120px;
+}
+.chart .chartfill3 {
+  position: absolute;
+  width: 40px;
+  background: hsl(186deg, 34%, 60%);
+  bottom: 0;
+  border-radius: 10px;
+  height: 230px;
+}
+.chart .chartfill4 {
+  height: 110px;
+}
+.chart .chartfill5 {
+  height: 80px;
+}
+.chart .chartfill6 {
+  height: 200px;
+}
+.chart .chartfill7 {
+  height: 90px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  margin-top: 60px;
+}
+
+.persantage {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.price {
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.textbox {
+  position: absolute;
+  padding: 12px;
+  background: hsl(25deg, 47%, 15%);
+  margin-top: -50px;
+  right: -10px;
+  border-radius: 10px;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.chartfill1:hover {
+  background: hsl(10deg, 80%, 74%);
+}
+
+.chartfill2:hover {
+  background: hsl(10deg, 80%, 74%);
+}
+
+.chartfill3:hover {
+  background: hsl(185deg, 36%, 70%);
+}
+
+.chartfill4:hover {
+  background: hsl(10deg, 80%, 74%);
+}
+
+.chartfill5:hover {
+  background: hsl(10deg, 80%, 74%);
+}
+
+.chartfill6:hover {
+  background: hsl(10deg, 80%, 74%);
+}
+
+.chartfill7:hover {
+  background: hsl(10deg, 80%, 74%);
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    margin-right: 30px;
+  }
+}
+@media screen and (width: 435px) {
+  .container {
+    max-width: 435px;
+  }
+}
+.days {
+  display: flex;
+}
+
+.day {
+  position: absolute;
+  bottom: -26px;
+  z-index: 2;
+}
+
+hr {
+  margin-top: 60px;
+  border: 1px solid rgb(184, 180, 180);
+}/*# sourceMappingURL=style.css.map */

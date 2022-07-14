@@ -1,0 +1,193 @@
+$Soft_red:hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+$Cyanlow: hsl(185, 36%, 70%);
+
+
+$Dark_brown: hsl(25, 47%, 15%);
+$Medium_brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very_pale_orange: hsl(10, 80%, 74%);
+
+$border:10px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: $Cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    max-width: 375px;
+    height: auto;
+    .myblance{
+        width: 375px;
+        height: 100px;
+        background: $Soft_red;
+        border-radius: $border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
+    }
+   
+    }
+    
+.chartContainer{
+    width: 375px;
+    padding: 0 20px;
+    background: white;
+    border-radius: $border;
+    margin-top: 20px;
+
+    .title{
+        color: $Dark_brown;
+    }
+    
+}
+
+.chart{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .chart1
+    {
+       
+        width: 300px;
+        height: 300px;
+        
+        border-radius: $border;
+        
+       
+    }
+    .chartfill1,.chartfill2,.chartfill4,.chartfill5,.chartfill6,.chartfill7
+    {
+        position: absolute;
+        width: 40px;
+        
+        background: $Soft_red;
+        bottom: 0;
+        border-radius: $border;
+    }
+    .chartfill1{
+        height: 60px;
+    }
+    .chartfill2{
+        height: 120px;
+    }.chartfill3{
+        position: absolute;
+        width: 40px;
+        
+        background: $Cyan;
+        bottom: 0;
+        border-radius: $border;
+        height: 230px;
+    }.chartfill4{
+        height: 110px;
+    }.chartfill5{
+        height: 80px;
+    }
+    .chartfill6{
+        height: 200px;
+    }
+    .chartfill7{
+        height: 90px;
+    }
+   
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.total{
+ margin-top: 60px; 
+}
+.persantage{
+    margin-top: 100px; 
+    margin-bottom:60px;
+}
+.price{
+    
+    text-align: center;
+    color: white;
+    
+    border-radius: $border;
+    
+   font-weight: 400;
+   font-size: 12px;
+    
+}
+.textbox{
+    position: absolute;
+    padding: 12px;
+    background: $Dark_brown;
+    margin-top: -50px;
+    right: -10px;
+    border-radius: $border;
+    z-index: 2;
+    visibility: hidden;
+}
+
+
+.chartfill1:hover{
+    background: $Very_pale_orange;
+    }
+    .chartfill2:hover{
+        background: $Very_pale_orange;
+        }
+        .chartfill3:hover{
+            background: $Cyanlow;
+            }
+            .chartfill4:hover{
+                background: $Very_pale_orange;
+                }
+                .chartfill5:hover{
+                    background: $Very_pale_orange;
+                    }
+                    .chartfill6:hover{
+                        background: $Very_pale_orange;
+                        }
+                        .chartfill7:hover{
+                            background: $Very_pale_orange;
+                            }
+                           
+@media screen and (max-width:540px){
+            .container{
+                margin-right: 30px;
+            }    
+}
+@media screen and (width:435px){
+    .container{
+        max-width: 435px;
+    }    
+}
+
+.days{
+    display:flex;
+    
+}
+
+.day{
+    position: absolute;
+    bottom: -26px;
+    z-index: 2;
+}
+hr{
+    margin-top: 60px;
+
+    border: 1px solid rgb(184, 180, 180);
+    
+}

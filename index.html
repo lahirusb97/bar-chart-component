@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<!-- 
+  My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month -->
+  <div class="container">
+
+    <div class="myblance">
+      <div class="blance">
+        <h3>My blance</h3>
+        <h1>$921</h1>
+      </div>
+    
+        <img src="./images/logo.svg" alt="">
+    </div>
+
+    <div class="chartContainer">
+      <h1 class="title">Spending - Last 7 days</h1>
+
+
+
+      <div class="chart">
+
+        <div class="chart1">
+          <p class="day">mon</p>
+          <div class="chartfill1 best">
+            <div class="textbox "><h1 class="price" data-id="0">454</h1></div>
+            
+          </div>
+          
+        </div>
+
+        <div class="chart1 ">
+          <p class="day">tue</p>
+          <div class="chartfill2 best">
+            <div class="textbox "><h1 class="price" data-id="1"></h1></div>
+            
+          </div>
+        </div>
+
+        <div class="chart1">
+          <p class="day">wed</p>
+          <div class="chartfill3 best">
+            <div class="textbox"><h1 class="price"data-id="2"></h1></div>
+          </div>
+      </div>
+
+        <div class="chart1">
+          <p class="day">tru</p>
+          <div class="chartfill4 best">
+            <div class="textbox"><h1 class="price"data-id="3"></h1></div>
+          </div>
+      </div>
+
+        <div class="chart1">
+          <p class="day">fri</p>
+          <div class="chartfill5 best">
+            <div class="textbox"><h1 class="price"data-id="4"></h1></div>
+          </div>
+      </div>
+
+        <div class="chart1">
+          <p class="day">sat</p>
+          <div class="chartfill6 best">
+            <div class="textbox"><h1 class="price"data-id="5"></h1></div>
+          </div>
+      </div>
+
+      <div class="chart1">
+        
+        <div class="chartfill7 best">
+          <p class="day">sun</p>
+          <!-- add classs hete  -->
+          <div class="textbox"><h1 class="price"data-id="6"></h1></div>
+          
+        </div>
+      
+    </div>
+
+    
+      </div>
+
+      
+<hr>
+
+    <div class="flex">
+      <div class="total">
+        <p>Total this month</p>
+        <h1>$478.33</h1>
+      </div>
+      <div class="persantage">
+        <h3>+2.4%</h3>
+        <p>From last month</p>
+      </div>
+    </div>
+
+</div>
+
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lahiru</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
